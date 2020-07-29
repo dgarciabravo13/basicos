@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer"
 
 function App() {
+  const fecha = new Date().getFullYear();
   return (
-    <div className="App">
-      <h1>Hola Mundo</h1>
-    </div>
+    <>
+      <Header titulo="tienda Virtual" />
+      <Footer fecha={fecha}/>
+    </>
   );
 }
 
